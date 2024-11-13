@@ -6,3 +6,9 @@ my_dict.update({'Artem': 2014, 'Andrey': 2008})
 a = my_dict.pop('Artem')
 print('Deleted value: ' + str(a))
 print('Modified dictionary: ' + str(my_dict))
+
+my_set = {1, 'Яблоко', 42.314}
+print('Set: '+str(my_set))
+my_set.update((5,6,1.6))
+my_set.pop()
+print('Modified set: '+str(my_set))
