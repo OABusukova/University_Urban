@@ -1,0 +1,3 @@
+name = Olga
+print('name')
+
