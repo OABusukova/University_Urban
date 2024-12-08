@@ -3,13 +3,11 @@ def send_email(message, recipient, sender="university.help@gmail.com"):
             or not recipient.endswith((".com", ".ru", ".net")) \
             or not sender.endswith((".com", ".ru", ".net")):
         print('Невозможно отправить письмо с адреса', sender + ' на адрес', recipient)
-    elif recipient == 'vasyok1337@gmail.com':
-        print('Письмо успешно отправлено с адреса', sender + ' на адрес', recipient)
     elif recipient == sender:
         print('Нельзя отправить письмо самому себе!')
     elif sender != 'university.help@gmail.com':
         print('НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса', sender + ' на адрес', recipient)
-    elif sender == 'urban.info@gmail.com':
+    else:
         print('Письмо успешно отправлено с адреса', sender + ' на адрес', recipient)
 
 
