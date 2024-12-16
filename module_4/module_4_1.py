@@ -1,17 +1,10 @@
-import fake_math as fm
-fm.divide(5,0)
+from fake_math import divide as fm
+from true_math import divide as tm
 
-
-
-
-
-
-
-
-result1 = fake_divide(69, 3)
-result2 = fake_divide(3, 0)
-result3 = true_divide(49, 7)
-result4 = true_divide(15, 0)
+result1 = fm(69, 3)
+result2 = fm(3, 0)
+result3 = tm(49, 7)
+result4 = tm(15, 0)
 print(result1)
 print(result2)
 print(result3)
